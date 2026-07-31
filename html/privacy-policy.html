@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Compte à rebours</title>
+<meta name="description" content="Politique de confidentialité de l'application Android Compte à rebours (raikuji.countdown).">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f6f6f8;
+    --text: #1b1b1f;
+    --muted: #5c5c66;
+    --accent: #4c8dff;
+    --border: #e2e2e8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131316;
+      --surface: #1c1c20;
+      --text: #ececf1;
+      --muted: #a2a2ad;
+      --accent: #6da0ff;
+      --border: #2c2c33;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .4rem; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.4rem 0 .6rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, li { color: var(--text); }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  .subtitle { color: var(--muted); margin: 0 0 .25rem; }
+  .dates { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    margin: 1.5rem 0;
+  }
+  .callout p { margin: 0; }
+  .lang-divider {
+    margin: 4rem 0 0;
+    border: 0;
+    border-top: 1px solid var(--border);
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: .1em .4em;
+    font-size: .9em;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="subtitle">Application Android <strong>Compte à rebours</strong> — <code>raikuji.countdown</code></p>
+  <p class="dates">Dernière mise à jour : 31 juillet 2026 · Version 1.0</p>
+
+  <div class="callout">
+    <p><strong>En résumé : l'application ne collecte aucune donnée personnelle.</strong> Elle
+    n'accède pas à Internet, ne crée aucun compte, n'utilise ni publicité ni outil de mesure
+    d'audience, et n'envoie rien à qui que ce soit. Tout reste sur votre appareil.</p>
+  </div>
+
+  <h2>1. Qui édite l'application</h2>
+  <p>L'application « Compte à rebours » est développée et publiée par un développeur indépendant.
+  Pour toute question relative à cette politique, écrivez à
+  <a href="mailto:irub.tech@gmail.com">irub.tech@gmail.com</a>.</p>
+
+  <h2>2. Données collectées</h2>
+  <p><strong>Aucune donnée personnelle n'est collectée, transmise ou stockée sur un serveur.</strong>
+  L'application ne demande pas la permission d'accès à Internet et n'est techniquement pas en
+  mesure d'envoyer des informations vers l'extérieur.</p>
+  <p>En particulier, l'application ne collecte pas :</p>
+  <ul>
+    <li>votre identité, votre adresse e-mail ou vos contacts ;</li>
+    <li>votre position géographique ;</li>
+    <li>d'identifiants publicitaires ou d'identifiants d'appareil ;</li>
+    <li>de statistiques d'utilisation, de rapports de plantage ou de journaux d'analyse ;</li>
+    <li>vos photos, fichiers, calendrier ou tout autre contenu de l'appareil.</li>
+  </ul>
+
+  <h2>3. Données enregistrées sur votre appareil</h2>
+  <p>Pour afficher chaque widget, l'application enregistre localement les informations que vous
+  saisissez vous-même dans l'écran de configuration :</p>
+  <ul>
+    <li>le nom de l'événement ;</li>
+    <li>la date et l'heure de début, la date et l'heure de fin ;</li>
+    <li>la couleur et le style (sombre ou clair) choisis.</li>
+  </ul>
+  <p>Ces informations sont stockées dans l'espace privé de l'application sur votre appareil
+  (<em>SharedPreferences</em>), accessible uniquement par l'application elle-même. Elles ne sont
+  ni chiffrées ni transmises, car elles ne quittent jamais l'appareil.</p>
+
+  <h3>Suppression</h3>
+  <p>Les données d'un widget sont supprimées automatiquement dès que vous retirez ce widget de
+  votre écran d'accueil. La désinstallation de l'application efface l'intégralité des données
+  enregistrées. Vous pouvez également les effacer à tout moment depuis
+  <em>Paramètres → Applications → Compte à rebours → Stockage → Effacer les données</em>.</p>
+
+  <h2>4. Autorisations demandées</h2>
+  <ul>
+    <li><code>RECEIVE_BOOT_COMPLETED</code> — permet de reprogrammer la mise à jour des widgets
+    après le redémarrage de l'appareil, afin que la barre de progression reste à jour. Cette
+    autorisation ne donne accès à aucune donnée personnelle.</li>
+  </ul>
+  <p>L'application ne demande aucune autre autorisation. Elle n'utilise pas de service de
+  localisation, de caméra, de micro, de contacts ni de stockage externe.</p>
+
+  <h2>5. Services tiers</h2>
+  <p>L'application n'intègre aucun kit de développement (SDK) tiers : ni régie publicitaire, ni
+  outil de mesure d'audience, ni service de rapport de plantage, ni réseau social.</p>
+  <p>Si vous avez installé l'application depuis Google Play, la boutique elle-même peut collecter
+  des données liées au téléchargement et à l'installation, indépendamment de l'application. Ce
+  traitement relève de la
+  <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">politique
+  de confidentialité de Google</a>.</p>
+
+  <h2>6. Partage et vente de données</h2>
+  <p>Aucune donnée n'étant collectée, aucune donnée n'est partagée, vendue, louée ni transférée à
+  des tiers, en France comme à l'étranger.</p>
+
+  <h2>7. Enfants</h2>
+  <p>L'application ne s'adresse pas spécifiquement aux enfants et ne collecte sciemment aucune
+  donnée les concernant — ni les concernant, ni concernant qui que ce soit d'autre.</p>
+
+  <h2>8. Vos droits</h2>
+  <p>Le règlement général sur la protection des données (RGPD) vous accorde un droit d'accès, de
+  rectification, d'effacement et de portabilité de vos données personnelles. Aucune donnée
+  personnelle n'étant traitée par l'application ou son éditeur, ces droits s'exercent directement
+  sur votre appareil : les informations que vous avez saisies sont modifiables à tout moment dans
+  l'application, et supprimables comme indiqué à la section 3.</p>
+
+  <h2>9. Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour si l'application évolue. La date de dernière mise à jour
+  figure en haut de cette page. En cas de changement substantiel, la nouvelle version sera publiée
+  à cette même adresse avant que la modification ne prenne effet dans l'application.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions ou remarques : <a href="mailto:irub.tech@gmail.com">irub.tech@gmail.com</a>.</p>
+
+  <hr class="lang-divider">
+
+  <h1 id="en" lang="en" style="margin-top:2.5rem">Privacy Policy</h1>
+  <div lang="en">
+    <p class="subtitle">Android app <strong>Countdown Widget</strong> — <code>raikuji.countdown</code></p>
+    <p class="dates">Last updated: 31 July 2026 · Version 1.0</p>
+
+    <div class="callout">
+      <p><strong>In short: the app collects no personal data.</strong> It has no internet access,
+      no accounts, no ads and no analytics, and sends nothing to anyone. Everything stays on your
+      device.</p>
+    </div>
+
+    <h2>1. Publisher</h2>
+    <p>Countdown Widget is developed and published by an independent developer. For any question
+    about this policy, write to
+    <a href="mailto:irub.tech@gmail.com">irub.tech@gmail.com</a>.</p>
+
+    <h2>2. Data we collect</h2>
+    <p><strong>No personal data is collected, transmitted or stored on any server.</strong> The app
+    does not request the internet permission and is technically unable to send information
+    anywhere.</p>
+    <p>Specifically, the app does not collect your identity, e-mail address or contacts, your
+    location, advertising or device identifiers, usage statistics, crash reports, analytics logs,
+    photos, files, calendar or any other device content.</p>
+
+    <h2>3. Data stored on your device</h2>
+    <p>To render each widget, the app stores locally the information you enter yourself in the
+    configuration screen: the event name, the start date and time, the end date and time, and the
+    chosen colour and style (dark or light).</p>
+    <p>This information is kept in the app's private storage (<em>SharedPreferences</em>), readable
+    only by the app itself. It is never transmitted, because it never leaves the device.</p>
+    <p>A widget's data is deleted automatically as soon as you remove that widget from your home
+    screen. Uninstalling the app erases all stored data. You can also clear it at any time from
+    <em>Settings → Apps → Countdown Widget → Storage → Clear data</em>.</p>
+
+    <h2>4. Permissions</h2>
+    <p><code>RECEIVE_BOOT_COMPLETED</code> — lets the app reschedule widget refreshes after the
+    device restarts, so the progress bar stays accurate. It grants access to no personal data. The
+    app requests no other permission: no location, camera, microphone, contacts or external
+    storage.</p>
+
+    <h2>5. Third-party services</h2>
+    <p>The app bundles no third-party SDK: no ad network, no analytics, no crash reporting, no
+    social network. If you installed the app from Google Play, the store itself may collect data
+    related to the download and installation, independently of the app; that processing is covered
+    by
+    <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's
+    privacy policy</a>.</p>
+
+    <h2>6. Sharing and selling</h2>
+    <p>Since no data is collected, no data is shared, sold, rented or transferred to third parties,
+    anywhere.</p>
+
+    <h2>7. Children</h2>
+    <p>The app is not directed at children and knowingly collects no data about them — nor about
+    anyone else.</p>
+
+    <h2>8. Your rights</h2>
+    <p>The GDPR grants you rights of access, rectification, erasure and portability over your
+    personal data. As neither the app nor its publisher processes any personal data, these rights
+    are exercised directly on your device: the information you entered can be edited at any time in
+    the app, and deleted as described in section 3.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>This policy may be updated as the app evolves. The last-updated date appears at the top of
+    this page. For any substantial change, the new version will be published at this same address
+    before the change takes effect in the app.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions or comments: <a href="mailto:irub.tech@gmail.com">irub.tech@gmail.com</a>.</p>
+  </div>
+
+  <footer>
+    Compte à rebours / Countdown Widget · <code>raikuji.countdown</code> ·
+    <a href="#">Haut de page</a>
+  </footer>
+
+</main>
+</body>
+</html>
